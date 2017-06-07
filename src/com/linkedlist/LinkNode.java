@@ -1,9 +1,7 @@
 package com.linkedlist;
 
-/**
- * Created by thanhtt17 on 6/6/2017.
- */
 public class LinkNode {
+
     private Integer data;
     public LinkNode next;
 

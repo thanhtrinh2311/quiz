@@ -1,8 +1,5 @@
 package com.linkedlist;
 
-/**
- * Created by thanhtt17 on 6/6/2017.
- */
 public class LinkList {
     private LinkNode first;
     private LinkNode last;
@@ -12,10 +9,18 @@ public class LinkList {
         this.last = null;
     }
 
+    /*
+    * check LinkList is empty or not
+    * @return true if empty, false is not
+    */
     public boolean isEmpty() {
         return first == null && last == null;
     }
 
+    /*
+    * append a new element to linked list
+    * @param data Integer
+    */
     public void append(Integer data) {
         if (null == data) {
             throw new NullPointerException("The input is null");
@@ -31,6 +36,9 @@ public class LinkList {
         }
     }
 
+    /*
+    * remove element tail element
+    */
     public void removeTail() {
         if (null == last) {
             return;
@@ -45,8 +53,9 @@ public class LinkList {
     }
 
     /*
-    * @
-    * */
+    * remove element has value greater than input
+    * @param value
+    */
     public void removeGreaterThan(Integer value) {
         if(isEmpty()){
             return;
